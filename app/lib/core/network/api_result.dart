@@ -1,0 +1,15 @@
+/// Simple sealed-style result wrapper so repositories return a consistent
+/// shape and providers can render loading/error/data without try/catch spread everywhere.
+sealed class ApiResult<T> {
+  const ApiResult();
+}
+
+class ApiSuccess<T> extends ApiResult<T> {
+  final T data;
+  const ApiSuccess(this.data);
+}
+
+class ApiFailure<T> extends ApiResult<T> {
+  final String message;
+  const ApiFailure(this.message);
+}
