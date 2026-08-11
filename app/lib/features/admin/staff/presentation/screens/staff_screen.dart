@@ -124,7 +124,7 @@ class _AdminStaffScreenState extends ConsumerState<AdminStaffScreen> {
                           final status = s["status"]?.toString() ?? "active";
                           return ListTile(
                             leading: CircleAvatar(
-                              backgroundColor: _roleColor(role).withOpacity(0.12),
+                              backgroundColor: _roleColor(role).withValues(alpha: 0.12),
                               child: Text(
                                 (s["name"]?.toString().isNotEmpty == true ? s["name"].toString()[0] : "?").toUpperCase(),
                                 style: bodyFont(fontSize: 13, fontWeight: FontWeight.w700, color: _roleColor(role)),
@@ -137,7 +137,7 @@ class _AdminStaffScreenState extends ConsumerState<AdminStaffScreen> {
                               children: [
                                 Container(
                                   padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                                  decoration: BoxDecoration(color: _roleColor(role).withOpacity(0.12), borderRadius: BorderRadius.circular(AppRadii.chip)),
+                                  decoration: BoxDecoration(color: _roleColor(role).withValues(alpha: 0.12), borderRadius: BorderRadius.circular(AppRadii.chip)),
                                   child: Text(_roleLabel(role), style: bodyFont(fontSize: 11, fontWeight: FontWeight.w700, color: _roleColor(role))),
                                 ),
                                 const SizedBox(width: 8),

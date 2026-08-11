@@ -122,7 +122,7 @@ class _StatusChip extends StatelessWidget {
     final color = _statusColor(status);
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-      decoration: BoxDecoration(color: color.withOpacity(0.12), borderRadius: BorderRadius.circular(AppRadii.chip)),
+      decoration: BoxDecoration(color: color.withValues(alpha: 0.12), borderRadius: BorderRadius.circular(AppRadii.chip)),
       child: Text(status[0].toUpperCase() + status.substring(1), style: bodyFont(fontSize: 11, fontWeight: FontWeight.w700, color: color)),
     );
   }

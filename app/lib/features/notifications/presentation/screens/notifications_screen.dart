@@ -62,12 +62,12 @@ class NotificationsScreen extends ConsumerWidget {
                         },
                   child: Container(
                     decoration: BoxDecoration(
-                      color: read ? AppColors.paperDim : AppColors.ink.withOpacity(0.06),
+                      color: read ? AppColors.paperDim : AppColors.ink.withValues(alpha: 0.06),
                       borderRadius: BorderRadius.circular(AppRadii.card),
                     ),
                     child: ListTile(
                       leading: CircleAvatar(
-                        backgroundColor: AppColors.ink.withOpacity(0.1),
+                        backgroundColor: AppColors.ink.withValues(alpha: 0.1),
                         child: Icon(_iconFor(n["type"]), color: AppColors.ink),
                       ),
                       title: Text(n["title"], style: bodyFont(fontSize: 13.5, fontWeight: FontWeight.w700)),

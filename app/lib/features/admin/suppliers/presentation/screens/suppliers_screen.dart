@@ -80,7 +80,7 @@ class AdminSuppliersScreen extends ConsumerWidget {
                           final status = s["status"]?.toString() ?? "active";
                           final lastSync = DateTime.tryParse(s["lastSync"]?.toString() ?? "");
                           return ListTile(
-                            leading: CircleAvatar(backgroundColor: AppColors.ink.withOpacity(0.08), child: const Icon(Icons.local_shipping_outlined, color: AppColors.ink)),
+                            leading: CircleAvatar(backgroundColor: AppColors.ink.withValues(alpha: 0.08), child: const Icon(Icons.local_shipping_outlined, color: AppColors.ink)),
                             title: Text(s["name"]?.toString() ?? "", style: bodyFont(fontSize: 13.5, fontWeight: FontWeight.w700)),
                             subtitle: Text(
                               wide
@@ -97,7 +97,7 @@ class AdminSuppliersScreen extends ConsumerWidget {
                                 ],
                                 Container(
                                   padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                                  decoration: BoxDecoration(color: _statusColor(status).withOpacity(0.12), borderRadius: BorderRadius.circular(AppRadii.chip)),
+                                  decoration: BoxDecoration(color: _statusColor(status).withValues(alpha: 0.12), borderRadius: BorderRadius.circular(AppRadii.chip)),
                                   child: Text(
                                     status[0].toUpperCase() + status.substring(1),
                                     style: bodyFont(fontSize: 11, fontWeight: FontWeight.w700, color: _statusColor(status)),

@@ -118,7 +118,7 @@ class AdminPromotionsScreen extends ConsumerWidget {
                                 Container(
                                   padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                                   decoration: BoxDecoration(
-                                    color: (active ? AppColors.success : AppColors.warning).withOpacity(0.12),
+                                    color: (active ? AppColors.success : AppColors.warning).withValues(alpha: 0.12),
                                     borderRadius: BorderRadius.circular(AppRadii.chip),
                                   ),
                                   child: Text(

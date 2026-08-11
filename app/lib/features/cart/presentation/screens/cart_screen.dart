@@ -198,7 +198,7 @@ class _CartLine extends StatelessWidget {
           width: 26,
           height: 26,
           alignment: Alignment.center,
-          decoration: BoxDecoration(border: Border.all(color: AppColors.line.withOpacity(0.6)), color: AppColors.paper),
+          decoration: BoxDecoration(border: Border.all(color: AppColors.line.withValues(alpha: 0.6)), color: AppColors.paper),
           child: Icon(icon, size: 14, color: AppColors.ink),
         ),
       );

@@ -119,7 +119,7 @@ class _InventoryRowWide extends StatelessWidget {
   Widget build(BuildContext context) {
     final restocked = DateTime.tryParse(item["lastRestockedAt"]?.toString() ?? "");
     return Container(
-      color: low ? AppColors.warning.withOpacity(0.08) : null,
+      color: low ? AppColors.warning.withValues(alpha: 0.08) : null,
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       child: Row(
         children: [
@@ -154,7 +154,7 @@ class _InventoryCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final restocked = DateTime.tryParse(item["lastRestockedAt"]?.toString() ?? "");
     return Container(
-      color: low ? AppColors.warning.withOpacity(0.08) : null,
+      color: low ? AppColors.warning.withValues(alpha: 0.08) : null,
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

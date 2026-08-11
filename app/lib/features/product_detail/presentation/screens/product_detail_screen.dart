@@ -129,7 +129,7 @@ class _ProductDetailScreenState extends ConsumerState<ProductDetailScreen> {
                           margin: const EdgeInsets.symmetric(horizontal: 3),
                           width: active ? 18 : 6,
                           height: 6,
-                          decoration: BoxDecoration(color: active ? AppColors.ink : AppColors.ink.withOpacity(0.25)),
+                          decoration: BoxDecoration(color: active ? AppColors.ink : AppColors.ink.withValues(alpha: 0.25)),
                         );
                       }),
                     ),
@@ -180,7 +180,7 @@ class _ProductDetailScreenState extends ConsumerState<ProductDetailScreen> {
                       const SizedBox(width: 10),
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-                        color: AppColors.rust.withOpacity(0.12),
+                        color: AppColors.rust.withValues(alpha: 0.12),
                         child: Text("-$discountPct%", style: bodyFont(fontSize: 12, fontWeight: FontWeight.w700, color: AppColors.rust)),
                       ),
                     ],
@@ -213,7 +213,7 @@ class _ProductDetailScreenState extends ConsumerState<ProductDetailScreen> {
                             style: bodyFont(
                               fontSize: 12.5,
                               fontWeight: FontWeight.w700,
-                              color: disabled ? AppColors.inkSoft.withOpacity(0.4) : (selected ? AppColors.paper : AppColors.ink),
+                              color: disabled ? AppColors.inkSoft.withValues(alpha: 0.4) : (selected ? AppColors.paper : AppColors.ink),
                             ).copyWith(decoration: disabled ? TextDecoration.lineThrough : null),
                           ),
                         ),

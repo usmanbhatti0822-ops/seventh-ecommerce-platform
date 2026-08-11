@@ -46,7 +46,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         preferredSize: const Size.fromHeight(58),
         child: AnimatedContainer(
           duration: AppDurations.medium,
-          color: _navSolid ? AppColors.paper.withOpacity(0.96) : Colors.transparent,
+          color: _navSolid ? AppColors.paper.withValues(alpha: 0.96) : Colors.transparent,
           child: SafeArea(
             bottom: false,
             child: Padding(
@@ -243,7 +243,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           AspectRatio(
             aspectRatio: 4 / 3,
             child: Image.network("https://picsum.photos/seed/sw-editorial-mobile/900/700", fit: BoxFit.cover,
-                color: Colors.black.withOpacity(0.15), colorBlendMode: BlendMode.darken),
+                color: Colors.black.withValues(alpha: 0.15), colorBlendMode: BlendMode.darken),
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(20, 32, 20, 40),

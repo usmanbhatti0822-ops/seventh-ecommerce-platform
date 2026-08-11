@@ -119,15 +119,15 @@ class _NavTile extends StatelessWidget {
         margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
         decoration: BoxDecoration(
-          color: selected ? AppColors.paper.withOpacity(0.1) : Colors.transparent,
+          color: selected ? AppColors.paper.withValues(alpha: 0.1) : Colors.transparent,
           borderRadius: BorderRadius.circular(4),
           border: Border(left: BorderSide(color: selected ? AppColors.olive : Colors.transparent, width: 2.5)),
         ),
         child: Row(
           children: [
-            Icon(icon, size: 18, color: selected ? AppColors.paper : AppColors.paper.withOpacity(0.55)),
+            Icon(icon, size: 18, color: selected ? AppColors.paper : AppColors.paper.withValues(alpha: 0.55)),
             const SizedBox(width: 12),
-            Text(label, style: bodyFont(fontSize: 13, fontWeight: selected ? FontWeight.w700 : FontWeight.w500, color: selected ? AppColors.paper : AppColors.paper.withOpacity(0.6))),
+            Text(label, style: bodyFont(fontSize: 13, fontWeight: selected ? FontWeight.w700 : FontWeight.w500, color: selected ? AppColors.paper : AppColors.paper.withValues(alpha: 0.6))),
           ],
         ),
       ),

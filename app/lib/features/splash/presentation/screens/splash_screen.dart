@@ -44,7 +44,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
               children: [
                 Text("SEVENTH", style: displayFont(fontSize: 40, color: AppColors.paper, letterSpacing: 2)),
                 const SizedBox(height: 10),
-                Text("VOLUME 07 — CLOUD SERIES", style: eyebrowFont(color: AppColors.paper.withOpacity(0.6))),
+                Text("VOLUME 07 — CLOUD SERIES", style: eyebrowFont(color: AppColors.paper.withValues(alpha: 0.6))),
               ],
             ),
           ),

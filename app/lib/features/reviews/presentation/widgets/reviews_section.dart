@@ -71,7 +71,7 @@ class ReviewsSection extends ConsumerWidget {
                             children: [
                               CircleAvatar(
                                 radius: 14,
-                                backgroundColor: AppColors.ink.withOpacity(0.1),
+                                backgroundColor: AppColors.ink.withValues(alpha: 0.1),
                                 child: Text(r["userName"][0], style: bodyFont(fontSize: 12, fontWeight: FontWeight.w700)),
                               ),
                               const SizedBox(width: 8),

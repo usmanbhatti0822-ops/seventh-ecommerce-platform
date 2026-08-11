@@ -46,12 +46,12 @@ class CouponsScreen extends ConsumerWidget {
                           children: [
                             Text(c["discountLabel"], style: displayFont(fontSize: 18, color: AppColors.paper)),
                             const SizedBox(height: 4),
-                            Text(c["description"], style: bodyFont(fontSize: 12, color: AppColors.paper.withOpacity(0.7))),
+                            Text(c["description"], style: bodyFont(fontSize: 12, color: AppColors.paper.withValues(alpha: 0.7))),
                             const SizedBox(height: 4),
                             if (validUntil != null)
                               Text(
                                 "Valid until ${validUntil.day}/${validUntil.month}/${validUntil.year} · ${c["usageCount"]} used",
-                                style: bodyFont(fontSize: 10.5, color: AppColors.paper.withOpacity(0.5)),
+                                style: bodyFont(fontSize: 10.5, color: AppColors.paper.withValues(alpha: 0.5)),
                               ),
                             const SizedBox(height: 10),
                             DottedCodeChip(code: c["code"]),
@@ -87,7 +87,7 @@ class DottedCodeChip extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.12),
+        color: Colors.white.withValues(alpha: 0.12),
         border: Border.all(color: Colors.white38),
       ),
       child: Text(code, style: bodyFont(fontSize: 12, fontWeight: FontWeight.w700, color: Colors.white, letterSpacing: 1)),

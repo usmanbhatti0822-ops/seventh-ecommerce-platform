@@ -127,7 +127,7 @@ class _StatusChip extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-      decoration: BoxDecoration(color: _color.withOpacity(0.12), borderRadius: BorderRadius.circular(AppRadii.chip)),
+      decoration: BoxDecoration(color: _color.withValues(alpha: 0.12), borderRadius: BorderRadius.circular(AppRadii.chip)),
       child: Text(
         status[0].toUpperCase() + status.substring(1),
         style: bodyFont(fontSize: 11, fontWeight: FontWeight.w700, color: _color),

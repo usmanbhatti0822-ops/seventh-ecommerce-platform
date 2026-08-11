@@ -158,7 +158,7 @@ class _StepHeader extends StatelessWidget {
                   const SizedBox(height: 6),
                   Text(
                     _stepLabels[i].toUpperCase(),
-                    style: eyebrowFont(color: active ? AppColors.ink : AppColors.inkSoft.withOpacity(0.5)).copyWith(fontSize: 9.5),
+                    style: eyebrowFont(color: active ? AppColors.ink : AppColors.inkSoft.withValues(alpha: 0.5)).copyWith(fontSize: 9.5),
                   ),
                 ],
               ),
@@ -397,7 +397,7 @@ class _PaymentStep extends ConsumerWidget {
         if (coupon != null)
           Container(
             padding: const EdgeInsets.all(14),
-            decoration: BoxDecoration(color: AppColors.olive.withOpacity(0.12), borderRadius: BorderRadius.circular(AppRadii.card)),
+            decoration: BoxDecoration(color: AppColors.olive.withValues(alpha: 0.12), borderRadius: BorderRadius.circular(AppRadii.card)),
             child: Row(
               children: [
                 const Icon(Icons.local_offer, color: AppColors.olive, size: 18),

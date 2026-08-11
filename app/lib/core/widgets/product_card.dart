@@ -81,7 +81,7 @@ class _ProductCardState extends State<ProductCard> {
                     onTap: widget.onToggleWishlist,
                     child: Container(
                       padding: const EdgeInsets.all(6),
-                      color: AppColors.paper.withOpacity(0.9),
+                      color: AppColors.paper.withValues(alpha: 0.9),
                       child: Icon(
                         widget.isWishlisted ? Icons.favorite : Icons.favorite_border,
                         size: 16,

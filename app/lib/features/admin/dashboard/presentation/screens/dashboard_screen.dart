@@ -151,7 +151,7 @@ class _StatCard extends StatelessWidget {
               children: [
                 Container(
                   padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(color: color.withOpacity(0.1), shape: BoxShape.circle),
+                  decoration: BoxDecoration(color: color.withValues(alpha: 0.1), shape: BoxShape.circle),
                   child: Icon(icon, color: color, size: 18),
                 ),
                 if (delta != null)
@@ -219,7 +219,7 @@ class _SalesTrendCard extends StatelessWidget {
                   gradient: LinearGradient(
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
-                    colors: [AppColors.olive.withOpacity(0.22), AppColors.olive.withOpacity(0.0)],
+                    colors: [AppColors.olive.withValues(alpha: 0.22), AppColors.olive.withValues(alpha: 0.0)],
                   ),
                 ),
               ),

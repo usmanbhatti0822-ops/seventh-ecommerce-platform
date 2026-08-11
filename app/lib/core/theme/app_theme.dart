@@ -112,7 +112,7 @@ ThemeData buildLightTheme() {
     ),
     navigationBarTheme: NavigationBarThemeData(
       backgroundColor: AppColors.paper,
-      indicatorColor: AppColors.ink.withOpacity(0.08),
+      indicatorColor: AppColors.ink.withValues(alpha: 0.08),
       surfaceTintColor: Colors.transparent,
     ),
   );

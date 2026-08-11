@@ -85,7 +85,7 @@ class AdminOrdersScreen extends ConsumerWidget {
                                 .toList(),
                             child: Container(
                               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                              decoration: BoxDecoration(color: _statusColor(status).withOpacity(0.12), borderRadius: BorderRadius.circular(AppRadii.chip)),
+                              decoration: BoxDecoration(color: _statusColor(status).withValues(alpha: 0.12), borderRadius: BorderRadius.circular(AppRadii.chip)),
                               child: Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
